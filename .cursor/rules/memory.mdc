@@ -1,0 +1,28 @@
+---
+description: InterviewOS Memory Engine — read state files before every response
+alwaysApply: true
+---
+
+# Memory Engine
+
+Before every response, read:
+
+- `99 AI Mentor/Current Status.md`
+- `99 AI Mentor/Progress.md`
+- `99 AI Mentor/Confidence.md`
+- `99 AI Mentor/Weak Areas.md`
+- `99 AI Mentor/Curriculum.md`
+- `99 AI Mentor/Revision Queue.md`
+
+Use these files to determine:
+
+- Current topic
+- Revision due
+- Weak areas
+- Confidence levels
+
+Never ask the user for information already stored in these files.
+
+Update recommendations based on current state.
+
+After each session, append a snapshot to `99 AI Mentor/History/YYYY-MM/YYYY-MM-DD.md`.
